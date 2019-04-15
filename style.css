@@ -1,0 +1,112 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+body {
+  text-align: center;
+  font-family: 'Krub', sans-serif;
+  min-width: 320px;
+  
+}
+
+#title-description {
+    width: 800px;
+    margin: auto;
+    padding: 20px 0px;
+    border: 1px none black;
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.3));
+    background-color: RoyalBlue;
+    color: white;
+}
+
+#dropdown {
+    height: 38px;
+}
+
+.buttons-boxes {
+    text-align: left;
+    padding: 0px 40px
+}
+
+
+form {
+    background-color: #f2f2f2;
+    width: 800px;
+    margin: auto;
+    padding: 20px 0px;
+    border: 1px none black;
+    /*text-align: center; */
+}
+
+
+input[type=submit] {
+    width: 100%;
+    background-color: RoyalBlue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.7em;
+}
+
+input[type=submit]:hover {
+    background-color: DarkBlue;    
+}
+
+textarea {   
+    vertical-align: center;
+    height: 6em;
+    width: 79%;
+    padding: 6px;
+    resize: vertical;
+}
+
+fieldset {
+    width: 70%;
+    margin: auto;
+    padding: 0px;
+}
+
+div {
+    margin-top: 1em;
+}
+
+input[type=text], 
+input[type=email],
+input[type=number],
+select {
+    width: 70%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+label, span {
+    align-content: flex-start;
+    width: 80px;
+    text-align: left;
+}
+
+@media all and (max-width: 800px) {
+    #title-description,
+    form {
+        width: 580px;
+        margin: auto;
+    } 
+    
+@media all and (max-width: 600px) {
+    #title-description,
+    form {
+        width: 100%;
+        margin: 0 auto;
+    } 
+
+}
+

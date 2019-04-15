@@ -1,0 +1,208 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Customer Satisfaction Survey</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+
+    <div class="container">
+      <div id="title-description">
+        <h1 id="title">Customer Satisfaction Survey</h1>
+
+        <p id="description">
+          Please answer the questions below to help us improve our service.
+        </p>
+      </div>
+
+      <form
+        id="survey-form"
+        action="https://formspree.io/info@macexpert.gr"
+        method="POST"
+      >
+        <div class="text-fields">
+          <div id="personaldata">
+            <label for="name" id="name-label">* Name:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              required
+              placeholder="Enter your name"
+            />
+          </div>
+          <div>
+            <label for="email" id="email-label">* Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="Enter your email"
+            />
+          </div>
+          <div>
+            <label for="age" id="number-label">* Age: </label>
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="10"
+              max="100"
+              step="1"
+              required
+              placeholder="Enter a number between 10 and 100"
+            />
+          </div>
+
+          <div>
+            <label for="gender">
+              <span>Title:</span>
+            </label>
+            <select name="gender" id="dropdown">
+              <option value="0">Please Select:</option>
+              <option value="1">Mr.</option>
+              <option value="2">Mrs</option>
+              <option value="3">Dr.</option>
+              <option value="4">Prof.</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="product">* Product:</label>
+            <input type="text" name="product" id="product" required />
+          </div>
+        </div>
+
+        <div>
+          <fieldset class="buttons-boxes">
+            <legend>How long have you had the product?</legend>
+            <p>
+              <input
+                type="radio"
+                name="time"
+                id="time_1"
+                value="Less than a week"
+              />
+              <label for="time_1">Less than a week</label>
+            </p>
+            <p>
+              <input
+                type="radio"
+                name="time"
+                id="time_2"
+                value="A week to a month"
+              />
+              <label for="time_2">A week to a month</label>
+            </p>
+            <p>
+              <input
+                type="radio"
+                name="time"
+                id="time_3"
+                value="A month to half a year"
+              />
+              <label for="time_3">A month to half a year</label>
+            </p>
+            <p>
+              <input
+                type="radio"
+                name="time"
+                id="time_4"
+                value="Half a year to a year"
+              />
+              <label for="time_4">Half a year to a year</label>
+            </p>
+            <p>
+              <input type="radio" name="time" id="time_5" value="Over a year" />
+              <label for="time_5">Over a year</label>
+            </p>
+          </fieldset>
+        </div>
+
+        <div>
+          <fieldset class="buttons-boxes">
+            <legend>Have you registered the product warranty?</legend>
+            <p>
+              <input type="radio" name="yesno" id="yes" value="Yes" />
+              <label for="yes">Yes</label>
+            </p>
+            <p>
+              <input type="radio" name="yesno" id="no" value="No" />
+              <label for="no">No</label>
+            </p>
+          </fieldset>
+        </div>
+
+        <div>
+          <fieldset class="buttons-boxes">
+            <legend>
+              Where do you use the product? (check all that apply)
+            </legend>
+            <p>
+              <input type="checkbox" name="where" value="1" />
+              <label for="home">Home</label>
+            </p>
+            <p>
+              <input type="checkbox" name="where" value="2" />
+              <label for="work">Office</label>
+            </p>
+            <p>
+              <input type="checkbox" name="where" value="3" />
+              <label for="ho">Home Office</label>
+            </p>
+            <p>
+              <input type="checkbox" name="where" value="4" />
+              <label for="outdoors">Outdoors</label>
+            </p>
+          </fieldset>
+        </div>
+
+        <div>
+          <p>
+            <label for="freetext"></label>
+            <legend>Is there anything that can be improved?</legend>
+            <textarea
+              cols="2000"
+              rows="5"
+              name="freetext"
+              id="freetext"
+              placeholder="Please type your suggestions"
+            ></textarea>
+          </p>
+        </div>
+
+        <div class="button">
+          <input type="submit" id="submit" />
+        </div>
+      </form>
+    </div>
+    <script src="" async defer></script>
+  </body>
+</html>
