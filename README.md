@@ -2,14 +2,14 @@
 
 This is my Survey Form page for freeCodeCamp's second [basic front end project](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-survey-form) created for an imaginary company. Demo is available [on codepen.io](https://codepen.io/macnick/full/YJErGL).
 
-[![Tribute Page](/screenshot.jpg)]
-
-Icons made by [Freepik](http://www.freepik.com) from [flaticon.com](https://www.flaticon.com/) and licensed by [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/).
+[![Survey Form](/screenshot.png)]
 
 ## User Stories
 
-- [x] I can view a tribute page with an image and text.
-- [x] I can click on a link that will take me to an external website with further information on the topic.
+- [x] I can see a title with id="title" in H1 sized text.
+- [x] I can see a short explanation with id="description" in P sized text.
+- [x] I can see a form with id="survey-form".
+- [x] Inside the form element, I am required to enter my name in a field with id="name".
 
 ## Tools Used
 
