@@ -35,36 +35,6 @@ Nothing to install, just clone this repo and you are good to go.
 #### Clone this repo
 
 ```bash
-git clone https://github.com/macnick/FCC-Tribute-Page.git
-cd FCC-Tribute-Page
-```
-
-#### Install dependencies
-
-```bash
-npm install
-```
-
-#### Start dev server with browser sync
-
-It builds HTML, CSS, and the JavaScript bundle, starts a dev server and refreshes the browser on every changes.
-
-```bash
-npm start
-```
-
-#### Build production bundle
-
-It uglifies JS, minifies CSS and images, replaces references to non-optimized scripts and stylesheets in HTML files and copies everything necessary to the `dist` folder - ready to upload.
-
-```bash
-npm run build
-```
-
-#### Preview production build
-
-It's the same as the build task above but it also starts a server so you can check your work.
-
-```bash
-npm run preview
+git clone https://github.com/macnick/FCC-Survey-Page.git
+cd FCC-Survey-Form
 ```
